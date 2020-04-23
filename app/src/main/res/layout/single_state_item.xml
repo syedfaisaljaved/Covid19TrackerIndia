@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right"/>
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:text="Maharatra"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:background="@drawable/rounded_corner"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:textColor="@color/white_85"
+            android:fontFamily="@font/archiabold" />
+
+        <LinearLayout
+            android:id="@+id/ll_confirm"
+            android:layout_width="0dp"
+            android:layout_weight="1.7"
+            android:background="@drawable/rounded_corner"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="2dp"
+            android:paddingRight="2dp"
+            android:gravity="right"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp">
+
+            <TextView
+                android:id="@+id/d_confirmed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/red"
+                android:textSize="10sp"
+                android:fontFamily="@font/archiamedium" />
+
+            <TextView
+                android:textColor="@color/white_95"
+                android:id="@+id/tv_confirmed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="4512"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/archiamedium"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@color/white_95"
+            android:id="@+id/tv_active"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="7458"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:gravity="right"
+            android:background="@drawable/rounded_corner"
+            android:paddingLeft="8dp"
+            android:paddingRight="4dp"
+            android:paddingTop="6dp"
+            android:textStyle="bold"
+            android:paddingBottom="6dp"
+            android:fontFamily="@font/archiamedium" />
+
+        <LinearLayout
+            android:id="@+id/ll_recovered"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:background="@drawable/rounded_corner"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="2dp"
+            android:paddingRight="2dp"
+            android:gravity="right"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp">
+
+            <TextView
+                android:id="@+id/d_recovered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/green"
+                android:textSize="10sp"
+                android:fontFamily="@font/archiamedium" />
+
+            <TextView
+                android:textColor="@color/white_95"
+                android:id="@+id/tv_recovered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="4512"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/archiamedium"/>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_deaths"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:background="@drawable/rounded_corner"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="2dp"
+            android:paddingRight="2dp"
+            android:gravity="right"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp">
+
+            <TextView
+                android:textColor="@color/white_95"
+                android:id="@+id/d_death"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="10sp"
+                android:fontFamily="@font/archiamedium"/>
+
+            <TextView
+                android:textColor="@color/white_95"
+                android:id="@+id/tv_death"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="4512"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/archiamedium"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--initially visiblity gone-->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_district_related"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="24dp"
+        android:paddingBottom="16dp"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Last\nupdate"
+                    android:textSize="12dp"
+                    android:textColor="@color/green"
+                    android:fontFamily="@font/archia_semibold_webfont"/>
+
+
+                <TextView
+                    android:id="@+id/last_update"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="1 hrs 25 min ago"
+                    android:gravity="right"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:textColor="@color/green"
+                    android:fontFamily="@font/archia_semibold_webfont"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:text="District"
+                    android:textAllCaps="true"
+                    android:textSize="10sp"
+                    android:background="@drawable/rounded_corner"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:textColor="@color/white_85"
+                    android:fontFamily="@font/archiabold" />
+
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1.6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:textAllCaps="true"
+                    android:textSize="10sp"
+                    android:background="@drawable/rounded_corner"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:textColor="@color/red"
+                    android:fontFamily="@font/archiabold" />
+
+            </LinearLayout>
+
+            <!--initial visiblity is gone-->
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:layout_marginTop="8dp"
+                android:id="@+id/recycler_view_district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!--only to give weight-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Covid19India</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="active">Active</string>
+    <string name="blank">-</string>
+    <string name="deaths">Deaths</string>
+    <string name="recovered">Recovered</string>
+    <string name="compiled">Compiled from State Government Numbers.</string>
+</resources>
